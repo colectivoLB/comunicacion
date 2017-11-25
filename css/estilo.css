@@ -1,0 +1,63 @@
+body{
+	font-family: Cooper Black;
+	font-size: 17px;
+
+}
+/*estilos generales*/
+
+nav ul{
+	opacity: 0.9;
+	list-style: none;
+	padding: 0;
+}
+nav li{
+	line-height: 3.5rem;
+	position: relative;
+	text-shadow: 0.1em 0.1em #333;
+}
+nav li ul{
+	position: absolute;	
+}
+nav a{
+	color: #ddd;
+	display: block;
+	padding: 0 5.0em;
+	text-decoration: none;
+	transition: .4s;
+}
+nav a:hover {
+	background: rgba(0,0,0,.5);
+}
+/*primer nivel*/
+
+nav > ul{
+	background: #C07737   ;
+	display: table;
+	width: 100%;
+}
+nav > ul > li{
+	float: left;
+}
+
+/*segundo nivel*/
+
+nav li li{
+	background: #756056  ;
+	max-height: 0;
+	overflow: hidden;
+	transition: all .5s;
+	width: 250px;
+}
+nav li:hover > ul > li {
+	max-height: 500px;
+	overflow: visible;
+}
+nav >ul >li >ul{
+	top: 100%;
+}
+/*tercer nivel*/
+nav ul ul ul{
+	left: 100%;
+	top: 0;
+
+}
